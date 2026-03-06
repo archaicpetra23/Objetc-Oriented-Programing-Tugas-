@@ -1,48 +1,88 @@
 package edu.pradita.oop.session05;
 
+// ko ken aku gatau disini harus di ganti atau gausah tapi mvn test baru jalan 
+// kalo kode di sini aku ganti jadi begini
+// https://chatgpt.com/s/t_69aa2f1b30888191a80c0e94ff8b4ae5
+
 /**
  * TUGAS001 – CRUD Buku
  * Model Buku untuk representasi data dari table `buku`
  */
 public class Buku {
+
     private int id;
     private String judul;
     private String penulis;
     private int tahunTerbit;
     private int stok;
 
-    // TODO 1: Constructor kosong
+    // Constructor kosong
     public Buku() {}
 
-    // TODO 2: Constructor lengkap (semua field)
+    // Constructor lengkap
     public Buku(int id, String judul, String penulis, int tahunTerbit, int stok) {
-        // TODO: assign semua field
+        this.id = id;
+        this.judul = judul;
+        this.penulis = penulis;
+        this.tahunTerbit = tahunTerbit;
+        this.stok = stok;
     }
 
-    // TODO 3: Getter & Setter untuk id
-    public int getId() { return 0; }
-    public void setId(int id) {}
+    // Getter & Setter id
+    public int getId() {
+        return id;
+    }
 
-    // TODO 4: Getter & Setter untuk judul
-    public String getJudul() { return null; }
-    public void setJudul(String judul) {}
+    public void setId(int id) {
+        this.id = id;
+    }
 
-    // TODO 5: Getter & Setter untuk penulis
-    public String getPenulis() { return null; }
-    public void setPenulis(String penulis) {}
+    // Getter & Setter judul
+    public String getJudul() {
+        return judul;
+    }
 
-    // TODO 6: Getter & Setter untuk tahunTerbit
-    public int getTahunTerbit() { return 0; }
-    public void setTahunTerbit(int tahunTerbit) {}
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
 
-    // TODO 7: Getter & Setter untuk stok
-    public int getStok() { return 0; }
-    public void setStok(int stok) {}
+    // Getter & Setter penulis
+    public String getPenulis() {
+        return penulis;
+    }
 
-    // TODO 8: Override toString() untuk debug
-    // Format: "Buku{id=1, judul='Clean Code', penulis='Robert Martin', tahun=2008, stok=5}"
+    public void setPenulis(String penulis) {
+        this.penulis = penulis;
+    }
+
+    // Getter & Setter tahunTerbit
+    public int getTahunTerbit() {
+        return tahunTerbit;
+    }
+
+    public void setTahunTerbit(int tahunTerbit) {
+        this.tahunTerbit = tahunTerbit;
+    }
+
+    // Getter & Setter stok
+    public int getStok() {
+        return stok;
+    }
+
+    public void setStok(int stok) {
+        this.stok = stok;
+    }
+
+    // toString()
     @Override
     public String toString() {
-        return "";
+        return "Buku{id=" + id +
+            ", judul='" + judul + '\'' +
+            ", penulis='" + penulis + '\'' +
+            ", tahun=" + tahunTerbit +
+            ", stok=" + stok +
+            '}';
     }
 }
+
+// ko ken aku gatau disini harus di ganti atau gausah tapi mvn test  baru jalan kalo kode di sini aku ganti jadi begini

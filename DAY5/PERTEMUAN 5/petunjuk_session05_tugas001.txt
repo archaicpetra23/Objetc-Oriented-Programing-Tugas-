@@ -38,7 +38,11 @@ INSERT INTO buku (judul, penulis, tahun_terbit, stok) VALUES
    dir target\dependency
 
    # 4. Jalankan
+   Windows :
    java -cp "target/classes;target/dependency/*" edu.pradita.oop.session05.App
+
+   Linux :
+   java -cp "target/classes:target/dependency/*" edu.pradita.oop.session05.App
 
 Expected output:
 1. READ ALL → tampil 3+ buku sample
